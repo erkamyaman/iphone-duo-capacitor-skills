@@ -10,9 +10,10 @@ Works with Claude Code, and with any agent that reads `SKILL.md` files.
 
 ```bash
 npx skills add erkamyaman/iphone-duo-capacitor-skills@capacitor-foldable
+npx skills add erkamyaman/iphone-duo-capacitor-skills@iphone-duo-capacitor-optimized
 ```
 
-Or copy `skills/capacitor-foldable` into your project's skills directory.
+Or copy the folders under `skills/` into your project's skills directory.
 
 ## What it covers
 
@@ -25,6 +26,8 @@ Or copy `skills/capacitor-foldable` into your project's skills directory.
 | [`iphone-duo.md`](skills/capacitor-foldable/references/iphone-duo.md) | Measured geometry, vertical bars, the keyboard, what iOS reports when |
 | [`android.md`](skills/capacitor-foldable/references/android.md) | `androidx.window`, rear display, dual screen |
 | [`testing.md`](skills/capacitor-foldable/references/testing.md) | The iPhone Duo simulator and Android foldable emulators |
+
+[`iphone-duo-capacitor-optimized`](skills/iphone-duo-capacitor-optimized/SKILL.md) audits an app against what Apple calls optimized for iPhone Duo (the iOS 27.1 SDK locally and in CI, layout that survives resizing, bars on the vertical edge, every pose in the simulator) and sends each fix to `capacitor-foldable`.
 
 ## Status
 
